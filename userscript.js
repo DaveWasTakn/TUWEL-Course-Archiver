@@ -75,6 +75,9 @@
 
         const courses = await getAllCourseLinks();
 
+        console.log("Total number of courses: " + courses.length);
+        return;
+
         await openTabsBatched(courses);
     }
 
